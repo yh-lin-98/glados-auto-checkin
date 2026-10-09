@@ -39,6 +39,7 @@ try:
     if (
         "Checkin!" in message
         or "Repeats!" in message
+        or "Today's observation logged" in message
         or result.get("code") == 0
     ):
         print("✅ 签到成功或今日已签到")
