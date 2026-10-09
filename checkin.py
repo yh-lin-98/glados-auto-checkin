@@ -2,7 +2,7 @@ import os
 import sys
 import requests
 
-BASE_URL = "https://glados.cloud"
+BASE_URL = "https://glados.rocks"
 
 cookie = os.environ.get("GLADOS_COOKIE", "").strip()
 user_agent = os.environ.get(
@@ -26,7 +26,7 @@ try:
     response = requests.post(
         BASE_URL + "/api/user/checkin",
         headers=headers,
-        json={"token": "glados.cloud"},
+        json={"token": "glados.rocks"},
         timeout=20
     )
 
